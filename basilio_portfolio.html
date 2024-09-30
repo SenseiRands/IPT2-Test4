@@ -8,9 +8,28 @@
 </head>
 <body>
     
+    <div class="content">
         <h1 class="heading">Hi, I'm Randall</h1>
         <h1>Welcome to my Website</h1>
         <h1>Get to know more about me here:</h1>
+
+        <div class="image-container">
+            <a href="javascript:void(0);" onclick="showContent('aboutme');">
+                <img src="1.png" alt="aboutme" class="aboutme">
+                <div class="caption">About Me</div>
+            </a>
+            <a href="javascript:void(0);" onclick="showContent('interests');">
+                <img src="2.png" alt="interests" class="interests">
+                <div class="caption">Interests</div>
+            </a>
+            <a href="javascript:void(0);" onclick="showContent('accomplishments');">
+                <img src="3.png" alt="accomplishments" class="accomplishments">
+                <div class="caption">Accomplishments</div>
+            </a>
+        </div>
+
+        <div id="content" class="hidden"></div>
+    </div>
 
 </body>
 </html>
