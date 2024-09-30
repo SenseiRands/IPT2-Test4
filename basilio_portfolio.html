@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randall's Portfolio</title>
+    <script>
     
+        function showContent(type) {
+            const content = document.getElementById('content');
+            content.innerHTML = '';
+            if (type === 'aboutme') {
+                content.innerHTML = `<p>I can't really go into much detail about who I am so I'll just get straight to the point. First, let's start with some quick lore. I was born in the great big year of 2004. The year when the top #1 song was "Yeah!" by Usher, the new movies at the time were Shrek 2 and Spider-Man 2, and the era when Counter-Strike peaked. As a kid, I grew up playing Counter-Strike in my early youth and even to this day. But what makes this game relevant about me though? Well, you could input cheat codes and commands through the game's developer console. And oh man, did I spend a lot of time experimenting with these commands. This little hobby of mine is what made me realize that being a developer is my calling. Very stereotypical but that's basically how I can summarize my lore. Very often would I question myself if I want to pursue being a developer or pursue business instead (or why not both, right?). I talked about my hobbies and accomplishments that shows up when you click the other CRT computers. Why don't you do yourself a favor and find out more about me there? I'm sure you'll find it more interesting than this. (You won't)</p>`;
+            } else if (type === 'interests') {
+                content.innerHTML = `
+                    <ul>
+                        <li>Gaming - As I've mentioned in my About Me page, gaming played a huge part in my course/career choices. As stereotypical as it sounds, being able to use the developer console in video games helped skyrocket my drive to become a full-stack developer.</li>
+                        <li>Working Out - The best part about my everyday life is that is lifting heavy weights. My current goal at the gym is to have a physique of Kratos.</li>
+                        <li>Listening to Rock Music - I have plenty of band shirts where I can name more than 3 songs.</li>
+                    </ul>`;
+            } else if (type === 'accomplishments') {
+                content.innerHTML = `
+                    <ul>
+                        <li>Elementary Graduate (2009-2015)</li>
+                        <li>High School Graduate (2015-2021)</li>
+                        <li>Dean's Lister in almost every year and semester except during the 2nd Year's 2nd Semester (2021-2024)</li>
+                        <li>Capstone 1 Defense Passer (2024)</li>
+                        <li>Tetris Champion in a Discord Community (2021) (this still counts as an accomplishment)</li>
+                        <li>Certificate Holder of Multiple Seminars (2020-2024) (this counts too)</li>
+                        <li>Top Score in an Arcade Basketball Game (2004-2024)</li>
+                        <li>Getting a 30 bomb in Call of Duty: Warzone (2022)</li>
+                        <li>60 kg Bench Press PR (2024)</li>
+                    </ul>`;
+            }
+        }
+    </script>
 </head>
 <body>
     <a href="javascript:history.back()" class="back-button">Back to Homepage</a>
